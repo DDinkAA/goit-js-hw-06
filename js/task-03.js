@@ -22,12 +22,3 @@ galleryList.insertAdjacentHTML(
     .join("")
 );
 
-const titleRef = document.createElement("h1");
-galleryList.before(titleRef);
-
-titleRef.classList.add("gallery__title");
-titleRef.textContent = "Gallery";
-titleRef.style.color = "grey";
-titleRef.style.textAlign = "center";
-titleRef.style.textTransform = "uppercase";
-titleRef.style.fontSize = "66px";
