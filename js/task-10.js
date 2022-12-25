@@ -32,5 +32,3 @@ function destroyBoxes() {
   boxes.innerHTML = "";
   numberOfBoxes.value = 0;
 }
-
-
