@@ -13,12 +13,30 @@ const images = [
   },
 ];
 
+console.log(images);
+
 const galleryList = document.querySelector(".gallery");
 
-galleryList.insertAdjacentHTML(
-  "beforeend",
-  images
-    .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}"></li>`)
-    .join("")
+const image = images.reduce(
+  (acc, image) => acc += `<li><img src=${image.url} 
+  alt='${image.alt}'width = 200 height = 150></li>`, ""
 );
+galleryList.insertAdjacentHTML("beforeend", image);
+
+
+// galleryList.insertAdjacentHTML(
+//   "beforeend",
+//   images
+//     .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}"></li>`)
+//     .join("")
+// );
+
+
+// const createImgEl = images.map(image => {
+//   let addEl = galleryList.insertAdjacentHTML(
+//     "beforeend",
+//     `<li><img src=${image.url} alt='${image.alt}'width = 200 height = 150></li>`
+//   );
+//   return addEl
+// })
 

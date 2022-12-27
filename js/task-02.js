@@ -16,4 +16,16 @@ for (const item of ingredients) {
 }
 console.log(ingredienstList);
 
-// console.log(ingredienstList);
+
+// ingredienstList.append(
+//   ...ingredients.map((item) => {
+//     let itemList = document.createElement("li");
+//     itemList.textContent = item;
+//     return itemList
+//   })
+// );
+
+
+
+
+
