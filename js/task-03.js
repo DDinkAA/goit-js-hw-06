@@ -24,6 +24,7 @@ const image = images.reduce(
 galleryList.insertAdjacentHTML("beforeend", image);
 
 
+
 // galleryList.insertAdjacentHTML(
 //   "beforeend",
 //   images
